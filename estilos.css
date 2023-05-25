@@ -1,0 +1,137 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: black
+    
+}
+.navegacion-principal{
+    text-align: center;
+    width: 80%;
+    margin: 10%;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    
+}
+.navegacion-principal a{
+    text-decoration: none;
+    /* background-color:brown; */
+    color: white;
+    margin: 0 20px;
+    font-size: 18px;
+    padding: 8px;
+    /* border-radius: 15px; */
+    
+}
+.navegacion-principal a:hover{
+    
+    background-color: rgb(223, 221, 221);
+    border-radius: 25px;
+    transition: 0.6s;
+    color: rgb(61, 0, 0);
+}
+.contenedor{
+    /* border: 1px solid black; */
+    background: #ccc;
+    width: 55%;
+    margin: 30px auto; 
+    padding: 50px;
+    text-align: center;
+}
+h1{
+   
+      
+    text-align: center;
+    font-size: 45px;
+    /* line-height: 1.000; */
+}
+h2{
+    color: brown;
+    text-align: center;
+    font-size: 25px;
+    
+}
+p{
+    color: aliceblue;
+    text-align: justify;
+    padding: 20%;
+    font-size: large;
+    justify-content: center;
+    
+}
+.flex-container{
+    border: 1px solid black;
+    text-align: center;
+    background: #ccc;
+    padding: 20px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}  
+    
+/* .caja{
+        width: 120px;
+        height: 120px;
+        border: 1px solid rgb(70, 69, 69);
+        background-color: #fcf9f9;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 120px;
+        line-height: 120px;
+        text-align: center;
+        margin: 5px;
+        order: 1;
+            
+    }
+.caja1{
+        width: 120px;
+        height: 120px;
+        border: 1px solid rgb(70, 69, 69);
+        background-color: #fcf9f9;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 120px;
+        line-height: 120px;
+        text-align: center;
+        margin: 5px;
+        order: 2;
+            
+    }
+    
+} */
+
+
+.contacto{
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+h3{
+    color: brown;
+    text-align: center;
+    font-size: 25px;
+}
+
+label{
+    text-align: right;
+}
+
+/* esto hace que sea responsive */
+@media screen and (max-width:750px) {
+    body{
+        height: 250px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenedor{
+        height: 250px;
+        flex-direction: column;
+        text-align: center;
+    }
+  
+}
+
+
