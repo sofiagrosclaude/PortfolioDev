@@ -5,75 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Potfolio Sofía Grosclaude</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+    F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
-
+    
+     
+    
 </head>
 
 <body>
-    <!-- <div class="navegacion"> -->
-    <nav class="navegacion-principal">
-        <a href="#">Sobre mí</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
-    </nav>
-    <header class="contenedor">
-        <h1>Sofía Grosclaude</h1>
-        <h2>Desarrolladora Backend</h2>
-        
-    </header>
-    <!-- </div> -->
-    <section>
-        <div class="sobremi">
-            <p>
-                Me apasiona aprender nuevas destrezas para la creación de algo nuevo. Si bien me desempeño en el arte digital sonoro, encontré un interés particular 
+<section>
+    <div>
+        <header class="contenedor">
+            <h1>Sofía Grosclaude</h1>
+            <h2>Desarrolladora Backend</h2>
+            <nav class="navegacion-principal">
+                <a href="#sobremi">Sobre mí</a>
+                <a href="#flex-container">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+     </header>
+ </div>
+        <div id="sobremi" class="sobremi">
+            <h3 class="sobremititulo">Sobre mí</h3>
+                <p> Me apasiona aprender nuevas destrezas para la creación de algo nuevo. Si bien me desempeño en el arte digital sonoro, encontré un interés particular 
                 por la tecnología en sí misma, porque al fin y al cabo comparten algo muy importante: perseguir en equipo la ejecución de un proyecto. ¿Qué puedo aportar?
                 Entusiasmo, comunicación asertiva, compañerismo, y sinceras ganas de crecer profesionalmente.
                 <br>
                 <br>
                 Me oriento al Backend en lenguaje C# con .NET framework, pero también tengo conocimientos de Base de Datos SQL, Programación orientada a objetos, HTML, CSS y JS.
-            </p>
+                </p>
         </div>
 
-    </section>
-    <section class="flex-container">
+</section>
+<section id="flex-container" class="flex-container">
         <h3>Proyectos</h3>
-        <!-- <div class="caja"></div>
-        <div class="caja1"></div> -->
-    </section>
-    <section>
-        <br>
-        <div class="contacto">
-            <h3>Contacto</h3>
-            <br>
-            <br>
-               <form action="" method="">
-                <!--entrada de datos a traves de la etiqueta-->
-                <label for="">Nombre:</label>
-                <input type="text">
-                <br>
-                <br>
-                <label for="">E-mail:</label>
-                <input type="email">
-                <br>
-                <br>
-                <label for="">Mensaje:</label>
-                <textarea cols="22" rows="10"></textarea>
-                <br>
-                <br>
-                <!-- <label for="">contrasña</label>
-                <input type="password"> -->
-                <button>Enviar</button>
-            </form>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-         
-         </div>
-    </section> 
+        <div class="text-center">
+            <div class="card" style="width: 30rem">
+              <img src="https://media.licdn.com/dms/image/D4D2DAQHzlZ0R09xy6g/profile-treasury-image-shrink_1920_1920/0/1685491088221?e=1686279600&v=beta&t=92C9cnktc10sDsRx65O6ypA4ZzyylJ-lD0AI7JFNr8s" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b>Aplicación de escritorio</b></h5>
+                <p class="card-text">Aplicación de escritorio para la administración de un comercio con conexión a base de datos.
+                  Desarrollo en lenguaje C# con .NET framework y SQL server. Funciones de lectura de lista de artículos, agregar-modificar-eliminar artículo.</p>
+                <a href="https://github.com/sofiagrosclaude/AppLecturaDB" class="btn btn-primary">Ver repositorio</a>
+              </div>
+            </div>
+            <div class="card2" style="width: 30rem">
+              <img src="https://media.licdn.com/dms/image/D4D2DAQFFZSWvRTa5Kw/profile-treasury-image-shrink_800_800/0/1685490576211?e=1686279600&v=beta&t=PDAto9phzVj45U4QJp_Xodg1e8oeO0Y1xojiAfrT6dM" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b> App para Comercio</b></h5>
+                <p class="card-text">Aplicación de escritorio para la gestión de artículos de un catálogo de comercio. Funciones agregar, modificar y eliminar, filtros, opciones de limpieza de campos de texto, ver detalles y shortcuts. Validación de errores y excepciones.</p>
+                <a href="https://github.com/sofiagrosclaude/AppCatalogo" class="btn btn-primary">Ver repositorio</a>
+              </div>
+            </div>
+            <div class="card3" style="width: 30rem">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><b> Aplicación WEB</b></h5>
+                <p class="card-text">Aplicación de escritorio para la administración de un comercio con conexión a base de datos.
+                  Desarrollo en lenguaje C# con .NET framework y SQL server. Funciones de lectura de lista de artículos, agregar-modificar-eliminar artículo.</p>
+                <a href="#" class="btn btn-primary">Ver repositorio</a>
+              </div>
+            </div>
+          </div>
+</section>
+        
+        <!-- <p class="proyecto1">Aplicación de escritorio para la administración de un comercio con conexión a base de datos.
+            Desarrollo en lenguaje C# con .NET framework y SQL server. Funciones de lectura de lista de artículos, agregar-modificar-eliminar artículo.</p>
+            <button type="button" class="btn btn-dark">Ver más</button>
+            <p class="proyecto2">Portfolio profesional. Desarrollo en HTML5, CSS, JS y Bootstrap.</p>
+            <button type="button" class="btn btn-dark">Ver más</button> -->
+            <!-- <button class="btn1">Ver más</button> -->
+        <!-- <button class="btn2">Ver más</button> -->
+        <!-- <div class="contacto">
+            <h3 class="contactotitulo">Contacto</h3>
+                <p>icon-gmail</p> <p>icon-linkedin</p> <p><icon-github></icon-github></p>
+        </div> -->
+<footer id="contacto">
+  <h3 class="contactotitulo">Contacto</h3>
+</footer>
 
 </body>
 </html>
