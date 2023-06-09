@@ -304,17 +304,22 @@ footer{
     font-size: 30px;
     padding-top: 5%;
 }
-
+.mb-3{
+    width: 310px;
+    margin: auto;
+    padding-top: 20px;
+    margin-top: 2%;
+}
 .mb-3a{
     width: 310px;
     margin: auto;
-    padding-top: 40px;
-    margin-top: 3%;
+    padding-top: 10px;
+    margin-top: 1%;
 }
 .mb-3b{
     width: 310px;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-top: 1%;
     margin-bottom: 4%;
 }
@@ -476,7 +481,12 @@ footer{
         margin-left: 10%;
         padding: auto;
     }
- 
+    .mb-3{
+        width: 310px;
+        margin: auto;
+        padding-top: 40px;
+        margin-top: 3%;
+    }
     .mb-3a{
         width: 310px;
         margin: auto;
@@ -493,5 +503,6 @@ footer{
     footer{
         height: 650px;
     }
+  
 }
 

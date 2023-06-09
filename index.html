@@ -9,7 +9,12 @@
     F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
     
-  
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('6zplyzpXMnjqUau8k')
+    </script>
 </head>
 
 <body>
@@ -85,20 +90,26 @@
       
     <footer id="contacto">
       <h3 class="contactotitulo">Contacto</h3>
-      <div class="mb-3a" action="sofiagrosclaud@gmail.com" method="POST"> 
-        <label for="email" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-      </div>
-      <div class="mb-3b">
-        <label for="mensaje" class="form-label">Mensaje:</label>
-        <textarea class="form-control" id="mensaje" rows="3"></textarea>
-      </div>
-      <div>
-        <button type="button" class="btn btn-light">Enviar</button>
-      </div>
-  
-    </footer>
+      <form id="form">
 
+        <div class="mb-3"> 
+          <label for="from_name" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" name="from_name" id="from_name" placeholder="Nombre">
+        </div>
+        <div class="mb-3a"> 
+          <label for="email_id" class="form-label">Email:</label>
+          <input type="text" class="form-control" name="email_id" id="email_id" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="mb-3b">
+          <label for="message" class="form-label">Mensaje:</label>
+          <textarea class="form-control" type="text" name="message" id="message" rows="3"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-light" value="Enviar" id="button">Enviar</button>
+        </div> 
+      </form>
+    </footer> 
 
+    <script src="app.js"></script>
 </body>
 </html>
