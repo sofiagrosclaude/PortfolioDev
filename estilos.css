@@ -1,41 +1,21 @@
-
 body{
-    
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     margin: auto;
     padding: auto;
     background-color:white;
-    
-    
 }
+/*HEADER*/
+
 .contenedor{
-   
-    
     width: 100%;
     margin: 30px auto; 
     padding: 50px;
-    
-    
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
-}
-.navegacion-principal{
-    text-align: center;
-    width: 85%;
-    
-    margin: 10%;
-    justify-content: center;
-    display: flex;
-    
-    padding-top: 5px;
-    background-color:  transparent;
-    line-height: 1.000;
-    margin-bottom: 0;
-
 }
 h1{
    
@@ -43,36 +23,45 @@ h1{
     text-align: left;
     font-size: 45px;
     line-height: 1.000;
+    margin-top: 5%;
     padding-top: auto;
     width: 20%
-    
-    
 }
 h2{
     color: rgb(0, 0, 0);
     text-align: left;
     font-size: 25px;
+}
 
+/*NAVEGADOR*/
+.navegacion-principal{
+    text-align: center;
+    width: 85%;
+    
+    margin: 5%;
+    justify-content: center;
+    display: flex;
+    
+    padding-top: 5px;
+    background-color:  transparent;
+    line-height: 1.000;
+    margin-bottom: 0;
+   
 
-    
-    
 }
 .navegacion-principal a{
-    text-decoration: none;
+    background-color: #dd356e;
     color: rgb(255, 255, 255);
+    text-decoration: none;
     margin: 0 5px;
     font-size: 18px;
     padding: 15px;
-    background-color: #dd356e;
     border-radius: 30px;
     line-height: 1.000;
- 
-    margin-left: 10px;
+    width: 145px;
+    /* margin-left: 10px; */
     display: inline-block;
     align-items: center;
-    
-    
-    
 }
 
 
@@ -98,7 +87,34 @@ h2{
    
   }
 
- 
+ /*SECCIÓN 1 SOBRE MÍ*/
+ h3{
+    color: rgb(0, 0, 0);
+    
+    font-size: 30px;
+    padding-top: 5%;
+    margin: auto;
+    text-align: center;
+}
+/* 
+.sobremi{
+    margin-top: 0;
+    padding-top: 0;
+
+    text-align: center;
+    align-items: center;
+    height: 650px;
+   
+        padding-bottom: 2px;
+    
+
+}  */
+/* .sobremititulo{
+   
+    text-align: center;
+    margin-bottom: 1px;
+   
+} */
 
 p{
     color: rgb(0, 0, 0);
@@ -108,11 +124,97 @@ p{
     font-size: large;
     justify-content: center;
     margin-bottom: 0px;
-        
 }
-.psobremi{
-    margin-bottom: 0px;
+
+/*TECNOLOGÏAS Y CURSOS*/
+.tech{
+    background-color: #000000;
+    color: white;
+    height: 850px;
 }
+.techtitulo{
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.images-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 2%;
+    
+}
+.images-container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    
+}
+/* .container img {
+    margin: 0 0px; 
+    flex: 1 0 30%;
+    margin: 5px;;
+}  */
+.images-container img {
+    margin: 1.5%; 
+    padding-left: 5px;
+    padding-right: 5px;
+    
+  }
+.images-container2 img {
+    margin: 10px; 
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 2%;
+  }
+
+
+  .logoCsharp{
+    width: 6%;
+    align-items: center;
+    padding-left: 5px;
+}
+.logoNet{
+    width: 5%;
+    align-items: center;
+   
+}
+.logoSql{
+    width:8%;
+    
+    align-items: center;
+}
+.logohtml{
+    width: 7%;
+    align-items: center;
+    
+}
+.logoCss{
+    width: 5%;
+  
+    align-items: center;
+    
+}
+.logoJavascript{
+    width: 5%;
+
+    align-items: center;
+    
+}
+.cursos{
+    color:white;
+    
+    text-align: left;
+    align-content: center;
+    margin-left: 30%;
+    padding-top: 50px;
+}
+
+/*PROYECTOS*/
 .flex-container{
     border: 1px solid rgba(254, 232, 86, 0.9);
     text-align: center;
@@ -120,13 +222,16 @@ p{
     padding: 10px;
     height: 900px;
     align-items: center;
-    
     align-content: baseline;
-  
     flex-flow: row-reverse;
-
+    
 }  
-.card{
+.text-center{
+    display: flex;
+    justify-content: center;
+    
+}
+.card1{
     margin: 50px;
     text-align: center;
     height: 550px;
@@ -135,11 +240,8 @@ p{
     background-color: white;
     color: #000000;
     display: inline-block;
-    .btn-primary{
-        background-color: #000000;
-        padding-top: 10px;
-    }
    
+
 }
 .card2{
     margin: 50px;
@@ -154,11 +256,7 @@ p{
     background-color: white;
     color: #000000;
     display: inline-block;
-    .btn-primary{
-        background-color: #000000;
-        padding-top: 10px;
-    }
-   
+  
 }
 .card3{
     margin:50px;
@@ -173,144 +271,11 @@ p{
     background-color: white;
     color: #000000;
     display: inline-block;
-    .btn-primary{
-        background-color: #000000;
-        padding-top: 10px;
-    }
-   
 }
-.text-center{
-    display: flex;
-    justify-content: center;
-    
-}
-
-
-footer{
-    display: block;
-    color: rgb(255, 255, 255);
-    align-items: center;
-    text-align: center;
-    background-color:  #000000;
-    height: 700px;
-    
-}
-
-h3{
-    color: rgb(0, 0, 0);
-    
-    font-size: 30px;
-    padding-top: 5%;
-    margin: auto;
-    text-align: center;
-}
-
-
-.sobremi{
-    margin-top: 0;
-    padding-top: 0;
-
-    text-align: center;
-    align-items: center;
-    height: 650px;
-   
-        padding-bottom: 2px;
-    
-
-}
-.sobremititulo{
-   
-    text-align: center;
-    margin-bottom: 1px;
-   
-}
-.tech{
+.btn-primary{
     background-color: #000000;
-    color: white;
-    height: 700px;
-}
-.techtitulo{
-    color: white;
-    padding-bottom: 20px;
-}
-
-
-.logoCsharp{
-    width: 120px;
-    padding-right: 30px;
-   
-   
-}
-.logoNet{
-    width: 80px;
-    align-items: center;
-}
-.logoSql{
-    width: 140px;
-    padding-left: 2%;
-    align-items: center;
-}
-.logohtml{
-    width: 105px;
-    align-items: center;
-    padding-left: 15px;
-}
-.logoCss{
-    width: 85px;
-  
-    align-items: center;
-    padding-left: 20px;
-}
-.logoJavascript{
-    width: 115px;
-   
-  
-    align-items: center;
-   padding-left: 2%;
-    
-}
-.tecnología{
-    background-color: white;
-    height: 500px;
-}
-.images-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 0;
-    
-}
-.container img {
-    margin: 0 0px; 
-    flex: 1 0 30%;
-    margin: 5px;;
-}
-.images-container img {
-    margin: 10px; 
-  }
-.cursos{
-    color:white;
-    
-    text-align: left;
-    align-content: center;
-    margin-left: 30%;
-    padding-top: 100px;
-}
-
-.contactotitulo{
-    color: aliceblue;
-    text-align: center;
-    font-size: 30px;
-    padding-top: 10%;
-}
-
-
-label{
-    text-align: right;
-}
-
-
+    padding-top: 10px;
+} 
 .card-img-top1{
     width: 70%;
     margin-top: 25px;
@@ -323,17 +288,48 @@ label{
     width: 90%;
     margin-top: 25px;
 }
+/*CONTACTO*/
 
-@media screen and (max-width:750px) {
-    body{
+footer{
+    display: block;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+    background-color:  #000000;
+    height: 700px;
+}
+.contactotitulo{
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 5%;
+}
+
+.mb-3a{
+    width: 310px;
+    margin: auto;
+    padding-top: 40px;
+    margin-top: 3%;
+}
+.mb-3b{
+    width: 310px;
+    margin: auto;
+    padding-top: 20px;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
+
+@media screen and (max-width:1000px) {
+    /* body{
+        width: 100%;
         height: auto;
         flex-direction: column;
         text-align: center;
-    }
+       
+    }  */
     .contenedor{
         height: 250px;
-        
-       
         justify-content: flex-start;
         align-items: center;
    
@@ -341,55 +337,117 @@ label{
     h1{
         order: 1;
         text-align: center;
-        
-       
         margin: auto;
         padding-top: 15%;
         width: auto;
-        
     }
     h2{
         order: 2;
         text-align: center;
         margin: auto;
- 
     }
-    nav{
-        order: 3;
-        align-self: flex-end;
-        width: auto;
-        margin: 0;
-    }
+   
     .navegacion-principal{
+        order: 3;
+        /* align-self: flex-end; */
+        margin: 5px, 5px;
         width: auto;
+        /* align-items: center; */
     }
-    .card{
-        display: block;
-        width: 100%;
-        margin-bottom: 1rem;
+    .navegacion-principal a{
+        width: 35%;
+        font-size: 90%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+    .sobremititulo{
+        margin: auto;
+    }
+    .sobremi{
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    
+    .tech{
+        height: 750px;
+        text-align: center;
+        align-items: center;
+    }
+    .techtitulo{
+        font-size: -2%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .cursos{
+        text-align: center;
+        align-content: center;
+        padding-top: 100px;
+        justify-content: center;
+        margin-left: 0%;
+
+    }
+    .container img {
+        flex: 1 0 45%; 
+    }
+    .images-container{
+        padding-top: 5%;
+        padding-left: 10px;
+        margin: -2%;
+        padding-right: 10px;
+    }
+    .images-container2{
+        padding-top: 5%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: -2%;
+    }
+    .images-container img {
+        margin: 2px; 
+    }
+    .logoCsharp{
+        width: 20%;
+        align-items: center;
+        offset-distance: auto;
+    }
+    .logoNet{
+        width: 17%;
+        align-items: center;
+        offset-distance: auto;
         
     }
-    .card2{
-        display: block;
-        
-        width: 100%;
-        margin-bottom: 1rem;
-        margin-left: 10%;
+    .logoSql{
+        width: 20%;
+        offset-distance: auto;
+        align-items: center;
+  
     }
-    .card3{
-        display: block;
-        
-        width: 100%;
-        margin-bottom: 1rem;
-        margin-left: 10%;
-        padding: auto;
+    .logohtml{
+        width: 20%;
+        align-items: center;
+
     }
+    .logoCss{
+        width: 15%;
+        align-items: center;
+         
+    }
+    .logoJavascript{
+        width: 17%;
+        align-items: center;
+     
+     
+    }
+    
     .flex-container{
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items:center;
         height: auto;
+       
     }  
     .text-center{
         display: flex;
@@ -397,73 +455,43 @@ label{
         text-align: center;
         align-items:center;
         height: auto;
+      
+    }
+    .card1{
+        display: block;
+        width: 80%;
+        margin-bottom: 1rem;
         
     }
-    .sobremititulo{
-        margin: auto;
+    .card2{
+        display: block;
+        width: 80%;
+        margin-bottom: 1rem;
+        margin-left: 10%;
     }
-    .mb-3{
+    .card3{
+        display: block;
+        width: 80%;
+        margin-bottom: 1rem;
+        margin-left: 10%;
+        padding: auto;
+    }
+ 
+    .mb-3a{
         width: 310px;
         margin: auto;
-        padding-top: 50px;
-        margin-top: 20%;
+        padding-top: 5%;
+        margin-top: 5%;
     }
-    .sobremi{
-        height: auto;
-        padding-bottom: 10px;
+    .mb-3b{
+        width: 310px;
+        margin: auto;
+        padding-top: 5%;
+        margin-top: 5%;
+        margin-bottom: 7%;
     }
-    .logoCsharp{
-        width: 132px;
-        align-items: center;
-        offset-distance: auto;
+    footer{
+        height: 650px;
     }
-    .logoNet{
-        width: 70px;
-        align-items: center;
-        offset-distance: auto;
-        
-    }
-    .logoSql{
-        width: 100px;
-        offset-distance: auto;
-        align-items: center;
-  
-    }
-    .logohtml{
-        width: 105px;
-        align-items: center;
-
-    }
-    .logoCss{
-        width: 100px;
-        align-items: center;
-        padding-left: 35px;  
-    }
-    .logoJavascript{
-        width: 105px;
-        align-items: center;
-        padding-left: 35px;
-     
-    }
-    .container img {
-        flex: 1 0 45%; 
-      }
-      .tech{
-        height: 800px;
-        text-align: center;
-        align-items: center;
-      }
-      .cursos{
-        text-align: center;
-        align-content: center;
-        padding-top: 100px;
-    }
-}
-
-.mb-3{
-    width: 310px;
-    margin: auto;
-    padding-top: 50px;
-    margin-top: 2%;
 }
 
