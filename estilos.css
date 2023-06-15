@@ -1,57 +1,87 @@
-body{
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    margin: auto;
-    padding: auto;
-    background-color:white;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow&family=Fira+Sans:wght@300&family=Inconsolata:wght@300;400&family=Lora&family=Raleway:wght@100;200;300&family=Red+Hat+Mono:wght@300&family=Roboto:wght@300&display=swap');
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    
 }
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow: auto;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-family: 'Raleway', sans-serif;
+    
+    background-color:white;
+    margin: 0;
+    padding: 0;
+    
+}
+
 /*HEADER*/
 
 .contenedor{
     width: 100%;
-    margin: 30px auto; 
-    padding: 50px;
-  
+    margin: auto; 
+    padding: 50px; 
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-color:  black;
+
 }
 h1{
-   
-    color: #000000;
+    font-family: 'Lora', serif;
+    
+    color: white;
     text-align: left;
-    font-size: 45px;
+    font-size: 40px;
     line-height: 1.000;
-    margin-top: 5%;
-    padding-top: auto;
-    width: 20%
+    margin-top: 7%;
+    margin-bottom: 0px;
+    padding-left: 15%;
+    width: 25%
 }
 h2{
-    color: rgb(0, 0, 0);
+    font-family: 'Lora', serif;
+   
+    color: white;
+    font-size:25px;
     text-align: left;
-    font-size: 25px;
-}
+    padding-left: 15%;
+    padding-top: 1px;
+} 
+
 
 /*NAVEGADOR*/
 .navegacion-principal{
     text-align: center;
-    width: 85%;
-    
-    margin: 5%;
+    width: 100%;
+    background-color: #000000;
+    margin: 0%;
     justify-content: center;
     display: flex;
-    
-    padding-top: 5px;
-    background-color:  transparent;
+    margin-right: 0px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     line-height: 1.000;
     margin-bottom: 0;
+    height: 80px;
+   
+   
    
 
 }
 .navegacion-principal a{
-    background-color: #dd356e;
-    color: rgb(255, 255, 255);
+    
+    background-color: black;
+    color: rgba(254, 232, 86, 0.9);
     text-decoration: none;
     margin: 0 5px;
     font-size: 18px;
@@ -61,64 +91,59 @@ h2{
     width: 145px;
     /* margin-left: 10px; */
     display: inline-block;
-    align-items: center;
+    font-family: 'Lora', serif;
+    /* justify-content: flex-end; */
+    text-align: center;
+    height: 50px;
 }
 
 
 .navegacion-principal a:hover{
     
-    
-    color: transparent;
+    background-color: rgba(254, 232, 86, 0.9);
+    color: black;
     transition: 0.5s;
-    color: rgb(0, 0, 0);
+  
+
+
 }
- .navegacion-principal {
+  .navegacion-principal {
     position: absolute;
     top: 0;
     right: 0;
-    align-items: center;
-    text-align: center;
-  }
-  
+
+  } 
+
+
+   
 .navegacion-principal a {
    
     display: inline-block;
-    margin-left: 10px;
-   
-  }
+}
+
 
  /*SECCIÓN 1 SOBRE MÍ*/
  h3{
-    color: rgb(0, 0, 0);
-    
+    color: black;
+    font-family: 'Lora', serif;
     font-size: 30px;
-    padding-top: 5%;
+    padding-top: 7%;
     margin: auto;
     text-align: center;
 }
-/* 
-.sobremi{
-    margin-top: 0;
-    padding-top: 0;
 
-    text-align: center;
-    align-items: center;
-    height: 650px;
-   
-        padding-bottom: 2px;
-    
-
-}  */
-/* .sobremititulo{
+ .sobremititulo{
    
     text-align: center;
     margin-bottom: 1px;
+    margin-top: 1%;
    
-} */
+} 
 
 p{
     color: rgb(0, 0, 0);
     text-align: justify;
+    
     padding: 15%;
     padding-top: 5%;
     font-size: large;
@@ -130,35 +155,39 @@ p{
 .tech{
     background-color: #000000;
     color: white;
-    height: 850px;
+    height: 750px;
+    width: 100%;
+   
+    
+    
 }
 .techtitulo{
     color: white;
-    padding-top: 5%;
+    padding-top: 7%;
     padding-bottom: 5%;
+    
+    
 }
 .images-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin-top: 10px;
-    margin-left: 2%;
+    margin-top: 5%;
+    margin-left: 20%;
+    
     
 }
 .images-container2{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 0%;
+    margin-left: 20%;
     
 }
-/* .container img {
-    margin: 0 0px; 
-    flex: 1 0 30%;
-    margin: 5px;;
-}  */
+
 .images-container img {
     margin: 1.5%; 
     padding-left: 5px;
@@ -201,24 +230,35 @@ p{
 }
 .logoJavascript{
     width: 5%;
-
+    
     align-items: center;
     
 }
 .cursos{
     color:white;
-    
+   width: auto;
     text-align: left;
-    align-content: center;
-    margin-left: 30%;
-    padding-top: 50px;
+    align-content: right;
+    margin-left: 50%;
+    
+    margin-top: 0%;
+}
+table{
+    background-color: white;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 10%;
+    
+    
+    
+    
 }
 
 /*PROYECTOS*/
 .flex-container{
     border: 1px solid rgba(254, 232, 86, 0.9);
     text-align: center;
-    background: rgba(254, 232, 86, 0.9);
+    background-color: rgba(254, 232, 86, 0.9);
     padding: 10px;
     height: 900px;
     align-items: center;
@@ -275,7 +315,16 @@ p{
 .btn-primary{
     background-color: #000000;
     padding-top: 10px;
+    border-color:  white;
+    border-radius: 30px;
+
 } 
+.btn-primary:hover{
+    background-color: rgba(254, 232, 86, 0.9);
+    border-color: white;
+    color: #000000;
+    transition: 0.5s;
+}
 .card-img-top1{
     width: 70%;
     margin-top: 25px;
@@ -296,13 +345,13 @@ footer{
     align-items: center;
     text-align: center;
     background-color:  #000000;
-    height: 700px;
+    height: 730px;
 }
 .contactotitulo{
     color: aliceblue;
     text-align: center;
     font-size: 30px;
-    padding-top: 5%;
+    padding-top: 7%;
 }
 .mb-3{
     width: 310px;
@@ -323,49 +372,80 @@ footer{
     margin-top: 1%;
     margin-bottom: 4%;
 }
-
+.btn-light:hover{
+    background-color: #000000;
+    color: #ffffff;
+    border-bottom: #ffffff;
+    transition: 0.5s;
+   
+}
+.btn-light{
+    margin-bottom: 2%;
+    border-radius: 30px;
+    
+    
+}
+.footercito{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    height: 80px;
+    background-color: #000000;
+}
 
 @media screen and (max-width:1000px) {
-    /* body{
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        text-align: center;
-       
-    }  */
+
+
     .contenedor{
         height: 250px;
         justify-content: flex-start;
         align-items: center;
+        justify-content: center;
+        
+       
    
     }
     h1{
         order: 1;
         text-align: center;
         margin: auto;
-        padding-top: 15%;
+        padding-top: 20%;
         width: auto;
+        padding-bottom: 5%;
+        padding-left: 0%;
     }
     h2{
         order: 2;
         text-align: center;
         margin: auto;
+        padding-left: 0%;
+       
     }
    
     .navegacion-principal{
         order: 3;
-        /* align-self: flex-end; */
+       
         margin: 5px, 5px;
-        width: auto;
-        /* align-items: center; */
+        width: 100%;
+        align-items: center; 
+        justify-content: center;
+        
     }
     .navegacion-principal a{
-        width: 35%;
+        width: auto;
         font-size: 90%;
         height: auto;
         align-items: center;
         text-align: center;
         padding: 15px;
+        background-color: rgba(254, 232, 86, 0.9);
+        color: black;
+       
+    }
+    .navegacion-principal a:hover{
+        color: rgba(254, 232, 86, 0.9);
+        background-color: #000000;
     }
     .sobremititulo{
         margin: auto;
@@ -377,14 +457,16 @@ footer{
 
     
     .tech{
-        height: 750px;
+        height: 850px;
         text-align: center;
         align-items: center;
+        
     }
     .techtitulo{
         font-size: -2%;
         padding-top: 5%;
         padding-bottom: 5%;
+    
     }
     .cursos{
         text-align: center;
@@ -394,6 +476,15 @@ footer{
         margin-left: 0%;
 
     }
+    table{
+        margin-top: 5%;
+       
+       
+        padding-bottom: 5%;
+        width: 100%;
+        font-size: 12px;
+        height: auto;
+    }
     .container img {
         flex: 1 0 45%; 
     }
@@ -402,6 +493,7 @@ footer{
         padding-left: 10px;
         margin: -2%;
         padding-right: 10px;
+       
     }
     .images-container2{
         padding-top: 5%;
@@ -490,19 +582,21 @@ footer{
     .mb-3a{
         width: 310px;
         margin: auto;
-        padding-top: 5%;
-        margin-top: 5%;
+        padding-top: 10px;
+        margin-top: 4%;
     }
     .mb-3b{
         width: 310px;
         margin: auto;
-        padding-top: 5%;
-        margin-top: 5%;
-        margin-bottom: 7%;
+        padding-top:10px;
+        margin-top: 4%;
+        margin-bottom: 5%;
     }
     footer{
         height: 650px;
     }
-  
+
+    
 }
+
 

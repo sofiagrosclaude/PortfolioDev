@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potfolio Sofía Grosclaude</title>
+    <title>Portfolio Sofía Grosclaude</title>
+    <link rel="shortcut icon" href="favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
     F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
-    
+   
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Barlow&family=Inconsolata:wght@300;400&family=Lora&family=Raleway:wght@100;200;300&family=Red+Hat+Mono:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
@@ -19,12 +22,13 @@
 
 <body>
   <header class="contenedor">
-      <h1>Sofía Grosclaude</h1>
-      <h2>Desarrolladora Backend</h2>
-    </header>
-    <section>
-      <div>
-        <nav class="navegacion-principal">
+    <h1>Sofía Grosclaude</h1>
+    <h2>Desarrolladora Backend</h2>
+  </header>
+  <section>
+    <div>
+        <nav style="position: fixed; bottom: 5px;" class="navegacion-principal">
+                <a href="#sobremi">Sobre mí</a>
                 <a href="#tech">Tecnologías</a>
                 <a href="#proyectos">Proyectos</a>
                 <a href="#contacto">Contacto</a>
@@ -40,28 +44,76 @@
     </section>
     <section id="tech" class="tech">
       <h3 class="techtitulo">Tecnologías y cursos</h3>
-      <div class="images-container">
+      <!-- <div class="images-container">
         <img src="https://www.horuss.com.mx/wp-content/uploads/2019/04/c.png" class="logoCsharp" alt="">
-        <img src="Recursos/logo net.jfif" class="logoNet" alt="">
+        <img src="logo net.jfif" class="logoNet" alt="">
         <img src="https://img.icons8.com/color/480/microsoft-sql-server.png" class="logoSql" alt="">
       </div>
       <div class="images-container2">
-        <img src="Recursos/logo html.png" class="logohtml" alt="">
-        <img src="Recursos/css logo.png" class="logoCss" alt="">
-        <img src="Recursos/logo javascript.png" class="logoJavascript" alt="">
+        <img src="logo html.png" class="logohtml" alt="">
+        <img src="css logo.png" class="logoCss" alt="">
+        <img src="logo javascript.png" class="logoJavascript" alt="">
+      </div> -->
+  
+      <div class="row">
+        <div class="col-2"></div>
+          <div class="col">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Cursos</th>
+                    <th scope="col">Contenidos</th>
+                    <th scope="col">Campus</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Introducción a la Programación</td>
+                    <td>Algoritmos y diagramas de flujo</td>
+                    <td>Maxiprograma.com</td>
+                  </tr>
+                  <tr>
+                    <td>C# Nivel 1</td>
+                    <td>Programación estructurada</td>
+                    <td>Maxiprograma.com</td>
+                  </tr>
+                  <tr>
+                    <td>C# Nivel 2</td>
+                    <td>POO y SQL. Aplicaciones de escritorio.</td>
+                    <td>Maxiprograma.com</td>
+                  </tr>
+                  <tr>                 
+                    <td>C# Nivel 3</td>
+                    <td>ASP .NET, Html, Css, Js, Bootstrap. Aplicaciones WEB.</td>
+                    <td>Maxiprograma.com</td>
+                  </tr>
+                  <tr>                 
+                    <td>Java - Front end</td>
+                    <td>Html5, Css, Js, Bootstrap</td>
+                    <td>Codo a codo - Bs As</td>
+                  </tr>
+                  <tr>                 
+                    <td>Introducción a base de datos con MySQL </td>
+                    <td>SQL, Wampserver, diseño de base de datos.</td>
+                    <td>Todocode</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        <div class="col-2"></div>
       </div>
-      <ul class="cursos">
-        <li>Introducción a la Programación en maxiprograma.com</li>
-        <li>C# nivel 1 (Programación estructurada) en maxiprograma.com</li>
-        <li> C# nivel 2 (POO y sql) en maxiprograma.com</li>
-        <li>C# nivel 3 (HTML, CSS, JS, Bootstrap, ASP .NET) en maxiprograma.com</li>
-      </ul>
+        <div class="btnCV">
+        <a href="CV Sofía Grosclaude - Software Developer 2023.pdf" class="btn btn-light" title="Descargar cv">Descargar CV</a>
+        <!-- <button href="CV Sofía Grosclaude - Software Developer 2023.pdf" class="btn btn-light" download="CV Sofía Grosclaude - Software Developer 2023" title="Descargar cv">Descargar CV</button> -->
+      </div>
     </section>
     <section id="proyectos" class="flex-container">
         <h3>Proyectos</h3>
         <div class="text-center">
             <div class="card1" style="width: 25rem">
-              <img src="Recursos/App Artículos.png" class="card-img-top1" alt="...">
+              <img src="App Artículos.png" class="card-img-top1" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"><b>Aplicación de escritorio</b></h5>
                   <p class="card-text">App de escritorio para la administración de artículos con conexión a base de datos.
@@ -70,7 +122,7 @@
                 </div>
             </div>
             <div class="card2" style="width: 25rem">
-              <img src="Recursos/App Comercio.png" class="card-img-top2" alt="...">
+              <img src="App Comercio.png" class="card-img-top2" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"><b> Aplicación para Comercio</b></h5>
                   <p class="card-text">App para la gestión de artículos de catálogo de comercio. Conexión a base de datos.</p>
@@ -78,11 +130,12 @@
                 </div>
             </div>
             <div class="card3" style="width: 25rem">
-              <img src="Recursos/Portfolio personal.png" class="card-img-top3" alt="...">
+              <img src="Portfolio personal.png" class="card-img-top3" alt="...">
                 <div class="card-body">
                   <h5 class="card-title"><b> Portfolio personal</b></h5>
-                  <p class="card-text">Página web en desarrollo. Portfolio desarrollado en HTML, CSS, y Bootstrap.</p>
-                  <a href="https://github.com/sofiagrosclaude/PortfolioDev" class="btn btn-primary">Ver repositorio</a>
+                  <p class="card-text">Portfolio personal en dos versiones: Pág. web en HTML, CSS, JS y Bootstrap, y App Web con ASP .NET</p>
+                  <a href="https://github.com/sofiagrosclaude/PortfolioDev" class="btn btn-primary">Repositorio WEB</a>
+                  <a href="https://github.com/sofiagrosclaude/PortfolioDev" class="btn btn-primary">Repositorio ASP .NET</a>
                 </div>
             </div>
         </div>
@@ -108,8 +161,10 @@
           <button type="submit" class="btn btn-light" value="Enviar" id="button">Enviar</button>
         </div> 
       </form>
+      <hr>
+      <p class="footercito">Copyright &copy; Sofía Grosclaude &reg; - 2023</p>
+     
     </footer> 
-
-    <script src="app.js"></script>
+        <script src="app.js"></script>
 </body>
 </html>
