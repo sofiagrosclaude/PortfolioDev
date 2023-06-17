@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Barlow&family=Fira+Sans:wght@300&family=Inconsolata:wght@300;400&family=Lora&family=Raleway:wght@100;200;300&family=Red+Hat+Mono:wght@300&family=Roboto:wght@300&display=swap');
 html, body {
     max-width: 100% !important;
-    overflow-x: hidden !important;
+    min-width: 100% !important;
+    overflow-x: hidden !important; 
     
 }
 html{
@@ -83,18 +84,18 @@ h2{
     background-color: black;
     color: rgba(254, 232, 86, 0.9);
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0px 5px;
     font-size: 18px;
     padding: 15px;
     border-radius: 30px;
     line-height: 1.000;
-    width: 145px;
-    /* margin-left: 10px; */
+    width: 135px;
+
     display: inline-block;
     font-family: 'Lora', serif;
-    /* justify-content: flex-end; */
+    
     text-align: center;
-    height: 50px;
+    height: 49px;
 }
 
 
@@ -122,7 +123,7 @@ h2{
 }
 
 
- /*SECCIÓN 1 SOBRE MÍ*/
+ /* SOBRE MÍ*/
  h3{
     color: black;
     font-family: 'Lora', serif;
@@ -155,7 +156,7 @@ p{
 .tech{
     background-color: #000000;
     color: white;
-    height: 750px;
+    height: 850px;
     width: 100%;
    
     
@@ -164,94 +165,41 @@ p{
 .techtitulo{
     color: white;
     padding-top: 7%;
-    padding-bottom: 5%;
+    padding-bottom:40px;
+  
     
     
 }
 .images-container{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-    margin-top: 5%;
-    margin-left: 20%;
-    
-    
-}
-.images-container2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-    margin-top: 0%;
-    margin-left: 20%;
-    
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-bottom: 2px;
+    padding-top: 10px;
+
 }
 
-.images-container img {
-    margin: 1.5%; 
-    padding-left: 5px;
-    padding-right: 5px;
-    
-  }
-.images-container2 img {
-    margin: 10px; 
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-right: 2%;
-  }
-
-
-  .logoCsharp{
-    width: 6%;
+.logotech{
+    width: 80px;
     align-items: center;
-    padding-left: 5px;
-}
-.logoNet{
-    width: 5%;
-    align-items: center;
+    justify-items: center;
+    padding-bottom: 50px;
+    display: inline-block;
    
 }
-.logoSql{
-    width:8%;
-    
-    align-items: center;
-}
-.logohtml{
-    width: 7%;
-    align-items: center;
-    
-}
-.logoCss{
-    width: 5%;
-  
-    align-items: center;
-    
-}
-.logoJavascript{
-    width: 5%;
-    
-    align-items: center;
-    
-}
-.cursos{
-    color:white;
-   width: auto;
-    text-align: left;
-    align-content: right;
-    margin-left: 50%;
-    
-    margin-top: 0%;
-}
+
 table{
     background-color: white;
     color: #000000;
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
+    padding-top: 60px;
     
-    
-    
-    
+
+}
+.btnCV{
+    padding-top: 30px;
+    height: 20px;
 }
 
 /*PROYECTOS*/
@@ -317,6 +265,7 @@ table{
     padding-top: 10px;
     border-color:  white;
     border-radius: 30px;
+    height: 45px;
 
 } 
 .btn-primary:hover{
@@ -334,7 +283,7 @@ table{
     margin-top: 25px;
 }
 .card-img-top3{
-    width: 90%;
+    width: 72%;
     margin-top: 25px;
 }
 /*CONTACTO*/
@@ -370,7 +319,7 @@ footer{
     margin: auto;
     padding-top: 10px;
     margin-top: 1%;
-    margin-bottom: 4%;
+    margin-bottom: 20px;
 }
 .btn-light:hover{
     background-color: #000000;
@@ -380,8 +329,10 @@ footer{
    
 }
 .btn-light{
+    padding-top: 10px;
     margin-bottom: 2%;
     border-radius: 30px;
+    height: 45px;
     
     
 }
@@ -391,14 +342,21 @@ footer{
     padding-top: 20px;
     padding-bottom: 15px;
     height: 80px;
+    font-size: 13px;
     background-color: #000000;
+}
+.redes{
+    width: 35px;
+    height:35px;
 }
 
 @media screen and (max-width:1000px) {
-
+    body {
+        overflow-y: hidden;
+    }
 
     .contenedor{
-        height: 250px;
+        height: 270px;
         justify-content: flex-start;
         align-items: center;
         justify-content: center;
@@ -438,7 +396,7 @@ footer{
         height: auto;
         align-items: center;
         text-align: center;
-        padding: 15px;
+        padding: 10px;
         background-color: rgba(254, 232, 86, 0.9);
         color: black;
        
@@ -457,7 +415,7 @@ footer{
 
     
     .tech{
-        height: 850px;
+        height: 700px;
         text-align: center;
         align-items: center;
         
@@ -468,75 +426,29 @@ footer{
         padding-bottom: 5%;
     
     }
-    .cursos{
-        text-align: center;
-        align-content: center;
-        padding-top: 100px;
-        justify-content: center;
-        margin-left: 0%;
-
-    }
+ 
     table{
         margin-top: 5%;
        
        
         padding-bottom: 5%;
         width: 100%;
-        font-size: 12px;
+        font-size: 8px;
         height: auto;
     }
     .container img {
         flex: 1 0 45%; 
     }
     .images-container{
-        padding-top: 5%;
-        padding-left: 10px;
-        margin: -2%;
-        padding-right: 10px;
-       
+        padding-top: 2px;
+          
     }
-    .images-container2{
-        padding-top: 5%;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-right: -2%;
-    }
-    .images-container img {
-        margin: 2px; 
-    }
-    .logoCsharp{
-        width: 20%;
-        align-items: center;
-        offset-distance: auto;
-    }
-    .logoNet{
-        width: 17%;
-        align-items: center;
-        offset-distance: auto;
-        
-    }
-    .logoSql{
-        width: 20%;
-        offset-distance: auto;
-        align-items: center;
-  
-    }
-    .logohtml{
-        width: 20%;
-        align-items: center;
-
-    }
-    .logoCss{
+    .logotech{
         width: 15%;
-        align-items: center;
-         
     }
-    .logoJavascript{
-        width: 17%;
-        align-items: center;
-     
-     
-    }
+  
+  
+    
     
     .flex-container{
         display: flex;
@@ -598,5 +510,9 @@ footer{
 
     
 }
+@media screen and (max-width:3000px) {
+    body {
+        overflow-y: hidden;
+    }
 
-
+}
