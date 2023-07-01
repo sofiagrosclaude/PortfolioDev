@@ -18,3 +18,21 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+
+var boton1 = document. getElementById('boton1'),
+  contador=0;
+
+  function cambio()
+  {
+    if(contador==0)
+    {
+      boton1.classList.add('rgba(254, 232, 86, 0.9)');
+      contador=1;
+    }
+    else{
+      boton1.classList.remove('rgba(254, 232, 86, 0.9)');
+      contador=0;
+    }
+  }
+
+  boton1.addEventListener('click',cambio,true);
